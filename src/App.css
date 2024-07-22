@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "pokemon-font";
+    src: url("fonts/Pokemon\ Solid.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "pokemon-gameboy";
+    src:
+        url("fonts/pokemon_pixel_font.woff") format("woff"),
+        url("fonts/pokemon_pixel_font.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main-title {
+    font-family: "pokemon-font";
+    text-align: center;
+    font-size: 4em;
+    width: 100vw;
+    margin: 10px 0;
+}
+
+.yellow {
+    color: yellow;
+    -webkit-text-stroke: 4px navy;
+    text-stroke: 4px navy;
+}
+
+nav p,
+#subtext {
+    font-family: "pokemon-gameboy";
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+nav {
+    display: flex;
+    gap: 30px
+}
+
+nav p {
+    font-size: 2em;
+    padding: 10px;
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    color: black;
+    text-decoration: none;
+}
+    
+
