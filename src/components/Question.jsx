@@ -1,7 +1,19 @@
-import React from 'react'
+import React from "react";
 
-export const Question = () => {
-  return (
-    <div>Question</div>
-  )
-}
+export const Question = ({ question, options, onAnswer }) => {
+    return (
+        <div>
+            <h1>{question}</h1>
+            {options.map((option) => (
+                <button
+                    key={option}
+                    onClick={() => {
+                        onAnswer(option);
+                    }}
+                >
+                    option
+                </button>
+            ))}
+        </div>
+    );
+};
