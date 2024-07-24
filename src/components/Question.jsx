@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const Question = ({ question, options, onAnswer }) => {
+
+
     return (
-        <div>
+        <div id="question-container">
             <h1>{question}</h1>
             {options.map((option) => (
                 <button
@@ -11,7 +13,7 @@ export const Question = ({ question, options, onAnswer }) => {
                         onAnswer(option);
                     }}
                 >
-                    option
+                    { option }
                 </button>
             ))}
         </div>

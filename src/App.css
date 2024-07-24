@@ -13,6 +13,7 @@
     font-style: normal;
 }
 
+
 #main-title {
     font-family: "pokemon-font";
     text-align: center;
@@ -60,7 +61,9 @@ input {
     text-transform: capitalize;
 }
 
-form button {
+form button,
+#question-container button,
+#results button {
     background-color: white;
     border: rgba(0, 0, 0, 0.298) 2px solid;
     margin-top: 20px;
@@ -70,7 +73,8 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+form button:hover,
+#question-container button:hover {
     background-color: rgba(0, 0, 0, 0.077);
 }
 
@@ -80,4 +84,28 @@ form {
     align-items: center;
 }
 
+#question-container {
+    font-family: "pokemon-gameboy";
+    text-align: center;
+}
+
+#question-container button {
+    margin-right: 10px;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    font-family: "pokemon-gameboy";
+    font-size: 2.2em;
+    align-items: center;
+}
+
+#results img {
+    width: 350px
+}
+
+#results button {
+    font-size: 0.9em;
+}
 
